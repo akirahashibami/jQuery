@@ -1,5 +1,12 @@
 $(function(){
-  $("button").click(function(){
-    $("img").attr("src","./img/sea.jpg").attr("alt","海");
+
+  $("a").click(function(){
+    $("img").attr("src",$(this).attr("href"));
+    return false;
   });
+
+  $("button").dblclick(function(){
+    $("img").attr("src","./img/sea.jpg");
+  });
+
 });
